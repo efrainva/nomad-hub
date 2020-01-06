@@ -1,0 +1,13 @@
+.pictures{
+  margin: 0 auto;
+  background-color: #026e07;
+  width: 600px;
+  height: 600px;
+  border-radius:5px;
+
+}
+
+.outer{
+  box-shadow: -11px -11px 11px 0 rgba(255, 255, 255, 0.342),
+  11px 11px 11px 0 rgba(0, 0, 0, 0.267);
+}

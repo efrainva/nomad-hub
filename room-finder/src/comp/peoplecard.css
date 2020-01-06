@@ -1,0 +1,76 @@
+
+
+.peoplecard{
+  color: rgba(0, 0, 0, 0.281);
+  border-radius: 20px;
+  /* border: rgba(179, 179, 179, 0.349) 2px solid; */
+  margin:10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 2px solid white; */
+  /* height: 200px; */
+  width: 350px;
+  background: rgba(240, 240, 240,1);
+  box-shadow: -11px -11px 11px 0 rgba(255, 255, 255, 0.342),
+  11px 11px 11px 0 rgba(0, 0, 0, 0.267);
+  box-shadow: 
+  
+  inset 11px 11px 11px 0 rgba(220, 225, 235, 1),
+  inset -11px -11px 11px 0 rgb(255, 255, 255);
+}
+
+.picture{
+  margin: 25px auto;
+  background-color: #dadada;
+  width: 200px;
+  height: 125px;
+  border-radius:5px;
+  /* border:  solid rgba(255, 255, 255, 0.575); */
+  border-width: 0px 0px 0px 2px;
+  /* position: relative; */
+  /* right: 60px; */
+  box-shadow: -5px -5px 15px 0 rgba(255, 255, 255, 0.473),
+  5px 5px 15px 0 rgba(0, 0, 0, 0.267);
+
+}
+
+.info{
+  padding: 1.5%;
+  width:200px;
+  height: 400px;
+}
+
+#button{
+  color: rgba(255, 255, 255, 0.836);
+  background-color: rgb(0, 204, 163);
+  border: 0px solid;
+  border-radius: 5px;
+  /* box-shadow: inset 0px 3px 6px 0 rgba(255, 255, 255, 0.637); */
+  /* inset 2px 2px 4px 0 rgba(0, 0, 0, 0.3); */
+  box-shadow: -2px -2px 4px 0 rgba(255, 255, 255, 0.425),
+  2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+#button:hover{
+  background-color: #00a887;
+  box-shadow: inset -2px -2px 4px 0 rgba(255, 255, 255, 0.418),
+  inset 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.location{
+  background:  rgba(240, 240, 240,1);
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.288);
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  box-shadow:  0px -10px 10px 0px rgba(255, 255, 255, 1),
+   -0px 10px 10px 0 rgba(220, 225, 235, 1);
+}
+.cardholder{
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
