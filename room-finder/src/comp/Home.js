@@ -3,6 +3,9 @@ import React from 'react';
 
 import PeopleCard from './PeopleCard'
 import NavBar from './navbar'
+import Search from './Search'
+// import Login from './Login'
+
 
 import {connect} from 'react-redux';
 import { getInfo } from '../Actions/lodgeA';
@@ -23,9 +26,11 @@ class Home extends React.Component {
  render(){
   return (
     <div >
+
       <NavBar />
+      <Search />
       <div className='location'>
-        <h2>Houston, texas</h2>
+        <h2>City</h2>
         <div className='cardholder'>
 
           { 
@@ -35,6 +40,7 @@ class Home extends React.Component {
 
         </div>
       </div>
+
     </div>
   )
   }

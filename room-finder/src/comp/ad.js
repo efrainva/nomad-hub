@@ -12,45 +12,47 @@ function ad (props) {
   return(
     <div> 
       <NavBar/>
-    <form className='none adform'>
-      <input placeholder='name' className='adinput' />
-      <input placeholder='last name' className='adinput'/>
-      <input placeholder='email' className='adinput'/>
-      <input placeholder='password' className='adinput'/>
-      <input placeholder ='locaton' className='adinput'/>
-      <input placeholder='rooms' className='adinput'/>
-      <input placeholder='price' className='adinput'/>
-      <input placeholder= 'discription of parking' className='adinput'/>
-      <input  placeholder = 'contact information'  className='adinput'/>
-      {/* <h3> laundry: </h3>  */}
-      <label> laundry </label>
-      <span className='AdInputSec'>
-       <input  type='checkbox'  className='adbox'/>
-       <label > yes </label>
-       <input type='radio' id='adbox' />
-       <label > no </label>
-      </span> 
+      <form className='none adform'>
+        host sign up
+        <input placeholder='name' className='adinput' />
+        <input placeholder='last name' className='adinput'/>
+        <input placeholder='email' className='adinput'/>
+        <input placeholder='password' className='adinput'/>
+        <input placeholder ='locaton' className='adinput'/>
+        <input placeholder='rooms' className='adinput'/>
+        <input placeholder='price' className='adinput'/>
+        {/* <input placeholder= 'discription of parking' className='adinput'/> */}
+        <input  placeholder = 'contact information'  className='adinput'/>
+        {/* <h3> laundry: </h3>  */}
+        <label> laundry </label>
+        <span className='AdInputSec'>
+        <input  type='checkbox'  className='adbox'/>
+        <label > yes </label>
+        <input type='checkbox' id='adbox' />
+        <label > no </label>
+        </span> 
 
 
-        <label>dishwasher</label>
-      <span>
-      <input type='radio' />
-      <label > yes </label>
-      <input type='radio' />
-      <label > no </label>
-      </span>
+          <label>dishwasher</label>
+        <span>
+        <input type='checkbox' />
+        <label > yes </label>
+        <input type='checkbox' />
+        <label > no </label>
+        </span>
 
-        <label>parking</label>
-      <span>
+          <label>parking</label>
+        <span>
 
 
-      <input type='radio' />
-      <label > yes </label>
-      <input type='radio' />
-      <label > no </label>
-      </span>
+        <input type='checkbox' />
+        <label > yes </label>
+        <input type='checkbox' />
+        <label > no </label>
+        </span>
 
-    </form>
+      <button>submit</button>
+      </form>
     </div>
   )
 }

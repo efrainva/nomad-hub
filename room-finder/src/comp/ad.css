@@ -13,7 +13,7 @@
   box-shadow:  0px -10px 10px 0px rgba(255, 255, 255, 1),
   -0px 10px 10px 0 rgba(220, 225, 235, 1);
   background:  rgba(240, 240, 240,1);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .adinput:focus{
   /* width: 300px;
@@ -26,28 +26,11 @@
   border-radius: 20px; */
 }
 
-/* .adbox{
-  width: 30px;
-  height: 30px;
-  border: 3px solid black;
-} */
 
 
-/* input:checked + label:before{
-  width: 30px;
-  height:30px;
-  border-radius: 5px;
-  background:white;
-  box-shadow:  0px -10px 10px 0px rgba(255, 255, 255, 1),
-  -0px 10px 10px 0 rgba(220, 225, 235, 1);
-} */
-
-input{
-  content: ' ';
-}
 input[type=checkbox] + label {
 
-  opacity: 0;
+  opacity:10;
   color: #ccc;
   font-style: italic;
 } 
