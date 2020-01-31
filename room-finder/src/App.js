@@ -5,8 +5,9 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 import PeopleCard from './comp/PeopleCard';
 import Personinfo from './comp/PersonInfo';
-import Home from './comp/Home'
-import ad from './comp/ad'
+import Home from './comp/Home';
+import Ad from './comp/Ad';
+import DeleteP from './comp/DeleteP'
 
 class App extends React.Component {
 
@@ -18,8 +19,9 @@ class App extends React.Component {
               <Route exact path="/" component={Personinfo} />
               <Route path="/home" component={Home} />
               <Route path="/personal" component={PeopleCard} />
-              <Route path= "/add" component={ad} />
-              <Redirect />
+              <Route exact path= "/add" component={Ad} />
+              <Route path="/del" component={DeleteP} />
+              <Redirect to="#"/>
 
             </Switch>
           </div>
