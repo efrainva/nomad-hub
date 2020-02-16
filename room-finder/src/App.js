@@ -3,9 +3,9 @@ import './App.css';
 
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import PeopleCard from './comp/PeopleCard';
+import PeopleCard from './comp/home/PeopleCard';
 import Personinfo from './comp/PersonInfo';
-import Home from './comp/Home';
+import Home from './comp/home/Home';
 import Ad from './comp/Ad';
 import DeleteP from './comp/DeleteP'
 
