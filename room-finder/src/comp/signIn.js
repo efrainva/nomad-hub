@@ -14,12 +14,12 @@ class Ad extends React.Component {
       email: "",
       passcode: "",
       location: "",
+      rooms: "",
       preice: "",
       laundry: false,
       dishwasher: false,
       parking: false,
     };
-
   }
 
   onChange = (event) => {
@@ -57,8 +57,8 @@ class Ad extends React.Component {
         className='adinput'
 
         name="name"
-        value={this.state.name}
         onChange={this.onChange}/>
+        value={this.state.name}
         <input 
         placeholder='last name' 
         className='adinput'
@@ -67,26 +67,31 @@ class Ad extends React.Component {
         <input 
         placeholder='email'
          className='adinput'
+        value={this.state.email}
          onChange={this.onChange}
          />
         <input 
         placeholder='password'
          className='adinput'
+        value={this.state.passcode}
          onChange={this.onChange}
          />
         <input 
         placeholder ='locaton'
          className='adinput'
+         value={this.state.location}
          onChange={this.onChange}
          />
         <input 
         placeholder='rooms'
          className='adinput'
+         value={this.state.rooms}
          onChange={this.onChange}
          />
         <input 
         placeholder='price'
          className='adinput'
+          value={this.state.price}
          onChange={this.onChange}
          />
         <input 
