@@ -27,17 +27,19 @@ class Ad extends React.Component {
     console.log(event.target.name,event.target.value)
   }
 
-  onSubmit = (event) =>  {
-    event.preventDefault()
-    const obj = {
-      name:this.state.name,
 
-    }
+  handleSubmit = (event) => {
+     event.defaultPrevented()
+   alert(`user ${event.state.value} was is loged in`) 
+   console.log("alert on handleSubmit", event.state.value)
+ 
+
     axios
-    .post("http://localhost:5000/api/users/u",obj)
+    .post("http://localhost:5000/api/users/u", this.state)
     .then( response => console.log(response) )
      this.setState({name:""})
   }
+
 
 
 
@@ -47,7 +49,7 @@ class Ad extends React.Component {
     <div> 
       <NavBar/>
       <form className='none adform'
-      onSubmit={this.onSubmit}
+      onSubmit={this.handleSubmit}
       > 
         host sign up
         <input 
