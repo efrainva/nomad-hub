@@ -9,7 +9,15 @@ class Ad extends React.Component {
   constructor(props){
     super(props);
     this.state ={
-      name: "",
+      fname: "",
+      lname: "",
+      email: "",
+      passcode: "",
+      location: "",
+      preice: "",
+      laundry: false,
+      dishwasher: false,
+      parking: false,
     };
 
   }
@@ -22,7 +30,8 @@ class Ad extends React.Component {
   onSubmit = (event) =>  {
     event.preventDefault()
     const obj = {
-      name:this.state.name
+      name:this.state.name,
+
     }
     axios
     .post("http://localhost:5000/api/users/u",obj)
@@ -53,13 +62,35 @@ class Ad extends React.Component {
         className='adinput'
 
         />
-        <input placeholder='email' className='adinput'/>
-        <input placeholder='password' className='adinput'/>
-        <input placeholder ='locaton' className='adinput'/>
-        <input placeholder='rooms' className='adinput'/>
-        <input placeholder='price' className='adinput'/>
-        <input placeholder= 'discription of parking' className='adinput'/>
-        <input  placeholder = 'contact information'  className='adinput'/>
+        <input 
+        placeholder='email'
+         className='adinput'
+         onChange={this.onChange}
+         />
+        <input 
+        placeholder='password'
+         className='adinput'
+         onChange={this.onChange}
+         />
+        <input 
+        placeholder ='locaton'
+         className='adinput'
+         onChange={this.onChange}
+         />
+        <input 
+        placeholder='rooms'
+         className='adinput'
+         onChange={this.onChange}
+         />
+        <input 
+        placeholder='price'
+         className='adinput'
+         onChange={this.onChange}
+         />
+        <input 
+        placeholder= 'discription of parking' className='adinput'/>
+        <input  
+        placeholder = 'contact information'  className='adinput'/>
         <h3> laundry: </h3> 
         <label> laundry </label>
         <span className='AdInputSec'>
