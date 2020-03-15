@@ -14,12 +14,12 @@ class Ad extends React.Component {
       email: "",
       passcode: "",
       location: "",
+      rooms: "",
       preice: "",
       laundry: false,
       dishwasher: false,
       parking: false,
     };
-
   }
 
   onChange = (event) => {
@@ -27,17 +27,19 @@ class Ad extends React.Component {
     console.log(event.target.name,event.target.value)
   }
 
-  onSubmit = (event) =>  {
-    event.preventDefault()
-    const obj = {
-      name:this.state.name,
 
-    }
+  handleSubmit = (event) => {
+     event.defaultPrevented()
+   alert(`user ${event.state.value} was is loged in`) 
+   console.log("alert on handleSubmit", event.state.value)
+ 
+
     axios
-    .post("http://localhost:5000/api/users/u",obj)
+    .post("http://localhost:5000/api/users/u", this.state)
     .then( response => console.log(response) )
      this.setState({name:""})
   }
+
 
 
 
@@ -47,7 +49,7 @@ class Ad extends React.Component {
     <div> 
       <NavBar/>
       <form className='none adform'
-      onSubmit={this.onSubmit}
+      onSubmit={this.handleSubmit}
       > 
         host sign up
         <input 
@@ -55,8 +57,8 @@ class Ad extends React.Component {
         className='adinput'
 
         name="name"
-        value={this.state.name}
         onChange={this.onChange}/>
+        value={this.state.name}
         <input 
         placeholder='last name' 
         className='adinput'
@@ -65,26 +67,31 @@ class Ad extends React.Component {
         <input 
         placeholder='email'
          className='adinput'
+        value={this.state.email}
          onChange={this.onChange}
          />
         <input 
         placeholder='password'
          className='adinput'
+        value={this.state.passcode}
          onChange={this.onChange}
          />
         <input 
         placeholder ='locaton'
          className='adinput'
+         value={this.state.location}
          onChange={this.onChange}
          />
         <input 
         placeholder='rooms'
          className='adinput'
+         value={this.state.rooms}
          onChange={this.onChange}
          />
         <input 
         placeholder='price'
          className='adinput'
+          value={this.state.price}
          onChange={this.onChange}
          />
         <input 
